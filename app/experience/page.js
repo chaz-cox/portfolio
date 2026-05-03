@@ -12,13 +12,20 @@ const experiences = [
               'platform — from shipping logistics and tax compliance systems ' +
               'to financial reporting tools used by real businesses.',
     bullets: [
-      'Architected a shipping logistics module via ShipEngine API, ' +
-      'enabling automated label creation and live rate comparisons ' +
-      'for FedEx and UPS based on weight and carrier packaging rules.',
+      
+'Architected a shipping logistics module via ShipEngine API, ' +
+      'enabling automated label creation and real-time rate comparisons ' +
+      'across FedEx and UPS — factoring in package weight, dimensions, ' +
+      'and carrier-specific packaging rules to return accurate rates.',
 
-      'Developed core logic for a Sales Tax & Nexus compliance system ' +
-      'using Avalara, automating real-time tax rate calculations ' +
-      'across multiple state and local jurisdictions.',
+
+      
+'Developed core logic for a multi-jurisdictional Sales Tax & Nexus ' +
+      'system using Avalara, calculating combined rates across state, city, ' +
+      'county, and special district levels — including penny-level rounding ' +
+      'adjustments to ensure totals matched jurisdiction-specific rules ' +
+      'across all supported states.',
+
 
       'Collaborated on SQL data migrations, building and testing tax ' +
       'rate table logic across local and QA environments before ' +
@@ -62,6 +69,9 @@ const experiences = [
 ]
 
 export default function Experience() {
+  const featured = experiences.filter(p => p.current)
+  const rest     = experiences.filter(p => !p.current)
+
   return (
     <main className="max-w-3xl mx-auto px-6 py-16">
 
