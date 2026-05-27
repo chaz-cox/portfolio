@@ -104,7 +104,7 @@ export default function Home() {
             { label: 'Projects',   href: '/projects',   emoji: '🛠️' },
             { label: 'Experience', href: '/experience', emoji: '💼' },
             { label: 'Education',  href: '/education',  emoji: '🎓' },
-            { label: 'Showcase',   href: '/showcase',   emoji: '⚡' },
+            // { label: 'Showcase',   href: '/showcase',   emoji: '⚡' },
             { label: 'Contact',    href: '/contact',    emoji: '✉️' },
           ].map(({ label, href, emoji }) => (
             <Link
