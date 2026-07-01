@@ -2,6 +2,28 @@
 // Server component — no "use client" needed
 
 const experiences = [
+
+  {
+      role: "Integration Specialist",
+      company: "Eviroguard Pest Control",
+      location: "St. George, UT",
+      period: "Jun 2026 - Current",
+      current: true,
+      summary: "Building report and task automation within CRMs. Project to Project basis",
+      bullets: [
+          "Project: FieldRoutes & BambooHR Automation System | Python: " +
+          "Built an automated daily reporting pipeline integrating two REST APIs "+
+          "(FieldRoutes and BambooHR) to identify employee activity gaps, implementing "+ 
+          "a multi-strategy waterfall merge algorithm to reconcile identity discrepancies "+
+          "across disparate HR systems.",
+          "Solved large-scale API limitations by implementing dynamic time-chunked pagination "+
+          "with rate limiting to reliably fetch 100,000+ daily records, and engineered a roaming "+
+          "employee account mapping system to accurately attribute activity across multiple office locations"
+      ],
+      tags: [
+          "Python", "BambooHR API", "FieldRoutes API", "GitHub Actions"
+      ],
+  },
   {
     role:     'Junior Full Stack Web Developer',
     company:  'HelloPOS',
